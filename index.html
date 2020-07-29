@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Tic-Tac-Toe</h1>
+            <form id="player-form" onsubmit="return false">
+                <div id="name1">
+                    <input type='text' class ="textInput" id="firstName" placeholder='Player 1 name'>
+                </div>
+                <div id="name2">
+                    <input type='text'  class ="textInput" id="secondName" placeholder='Player 2 name'>
+                </div>
+                <div id='symbol' class="radios">
+                    <p>Choose Player 1 Symbol: </p>
+                    <div>
+                        <input id="x" type="radio" name="symbol-radio">
+                        <label for="symbol-radio">X</label>
+                    </div>
+                    <div>
+                        <input id="o" type="radio" name="symbol-radio">
+                        <label for="symbol-radio">O</label>
+                    </div>
+                </div>
+                <div id="player-2-type" class="radios">
+                    <p>Choose player 2 Type: </p>
+                    <div>
+                        <input id="manual" type="radio" name="playerType">
+                        <label for="playerType">Manual</label>
+                    </div>
+                    <div>
+                        <input id="ai" type="radio" name="playerType">
+                        <label for="playerType">AI</label>
+                    </div>
+                    
+                    
+                </div>
+                <input type='submit' id="submit" value="Start Game">
+            </form>
+        
+
+        <div id="grid">
+            <div id="container">
+
+            </div>
+            <p id="moveThing"></p>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

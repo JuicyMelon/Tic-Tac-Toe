@@ -1,0 +1,143 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Ubuntu';
+    margin: 0;
+    padding: 0;
+}
+
+#player-form {
+    position: relative;
+    top: 125px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 0 10px 0.7px rgba(0,0,0,0.5);
+    line-height: 30px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: #3a86ff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    position: relative;
+    top: 40px;
+}
+
+#grid {
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: start;
+    align-items: start;
+}
+
+#player-2-type {
+    position: relative;
+    right: 10px;
+}
+
+
+#container {
+    height: 0%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    position: absolute;
+    top: 200px;
+    color: #3a86ff;
+    
+
+}
+
+.textInput {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #D3D3D3;
+    color: #3a86ff;
+}
+
+.gridDiv {
+    background-color: #D3D3D3;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 90px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit, button {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    border: 2px solid transparent;
+    padding: 12px;
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 7px;
+}
+
+#submit:hover, button:hover {
+    transition-duration: 500ms;
+    border: 2px solid #3a86ff;
+    background-color: white;
+    color: black;
+}
+
+#submit:active {
+    transform: scale(0.5);
+}
+
+#newGame {
+    position: relative;
+    top: 40px;
+}
+
+#moveThing {
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    animation-name: moveThing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveThing {
+    0% {
+        color: #3a86ff;
+    }
+    50% {
+        color: #ff893a
+    }
+    100% {
+        color: #3a86ff;
+    }
+}
